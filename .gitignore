@@ -1,6 +1,27 @@
+# Virtual environments
 venv/
-__pycache__/
-*.pyc
+.venv/
+env/
+
+# Secrets
 .env
-data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Local vector database (keep folder, ignore contents)
+data/*
+!data/.gitkeep
+
+# OS / editor
 .DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Streamlit
+.streamlit/secrets.toml
